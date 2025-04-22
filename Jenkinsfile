@@ -1,35 +1,32 @@
 pipeline {
     agent any
 
-    environment {
-        NODE_HOME = tool name: 'NodeJS', type: 'NodeJS'  // Refer to the NodeJS tool name configured above
+    tools {
+        nodejs 'NodeJS'  // Name of the NodeJS installation in Jenkins
     }
 
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
         stage('Install Dependencies') {
             steps {
-                script {
-                    // Use the installed Node.js tool
-                    sh '${NODE_HOME}/bin/npm install'
-                }
+                sh 'npm install'  // Installing project dependencies
             }
         }
 
-        stage('Build Project') {
+        stage('Build') {
             steps {
-                script {
-                    // Build the React project
-                    sh '${NODE_HOME}/bin/npm run build'
-                }
+                sh 'npm run build'  // Build the React project
             }
         }
 
-        stage('Run Tests') {
+        stage('Post Actions') {
             steps {
-                script {
-                    // Run tests (optional)
-                    sh '${NODE_HOME}/bin/npm test'
-                }
+                cleanWs()  // Clean workspace after build
             }
         }
     }
