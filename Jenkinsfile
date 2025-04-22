@@ -1,39 +1,32 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'  // Name of the NodeJS installation in Jenkins
-    }
-
     stages {
-        stage('Checkout') {
+        stage('Clone Repository') {
             steps {
-                checkout scm
-            }
-        }
-        
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'  // Installing project dependencies
+                // Cloning from the master branch of your GitHub repository
+                git branch: 'master', url: 'https://github.com/Satya-Shreya/DevopsFrontend.git'
             }
         }
 
-        stage('Build') {
+        stage('Deploy') {
             steps {
-                sh 'npm run build'  // Build the React project
-            }
-        }
+                echo 'Website cloned successfully.'
+                // Customize the deployment step based on your hosting method
+                // If deploying to a static website or server, you could use commands like:
+                
+                // Example: Deploy to a web server (Apache/Nginx)
+                // sh 'scp -r * user@server:/path/to/web/directory'
 
-        stage('Post Actions') {
-            steps {
-                cleanWs()  // Clean workspace after build
-            }
-        }
-    }
+                // If you're using a build tool or script, add those commands:
+                // For example, running a deploy script like:
+                // sh 'npm run deploy'
 
-    post {
-        always {
-            cleanWs()
+                // Example if you are deploying to a GitHub Pages branch:
+                // sh 'git push origin gh-pages'
+
+                echo 'Deployment step goes here.'
+            }
         }
     }
 }
