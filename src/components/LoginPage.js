@@ -775,10 +775,7 @@ const LoginPage = ({ setIsAuthenticated, setUser }) => {
   //   navigate(redirectPath, { replace: true });
   // };
 
-  const handleForgotPassword = (event) => {
-    event.preventDefault();
-    alert("Verification code is sent to email");
-  };
+  
 
   return (
     <div>
@@ -826,9 +823,7 @@ const LoginPage = ({ setIsAuthenticated, setUser }) => {
               </div>
             </div>
 
-            <a href="#" onClick={handleForgotPassword}>
-              Forgot Password?
-            </a>
+            
             <input type="submit" className="btn" value="Login" />
           </form>
         </div>

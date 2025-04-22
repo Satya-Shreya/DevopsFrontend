@@ -716,7 +716,6 @@ function App() {
   const [shippedItems, setShippedItems] = useState([]);
   const [products, setProducts] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [redirectPath, setRedirectPath] = useState(null);
   const [user, setUser] = useState(null); 
 
   useEffect(() => {
