@@ -1,0 +1,134 @@
+[
+    {
+      "name": "Jacket",
+      "description": "Women's brown jacket perfect for winters",
+      "price": "₹800",
+      "image": "/images/jacket1.png"
+    },
+    {
+      "name": "Jeans",
+      "description": "Women's blue jeans",
+      "price": "₹900",
+      "image": "/images/jeans1.png"
+    },
+    {
+      "name": "Denim Jacket",
+      "description": "Men's denim jacket",
+      "price": "₹1000",
+      "image": "/images/mendenim.png"
+    },
+    {
+      "name": "Hoodie",
+      "description": "Men's cream hoodie",
+      "price": "₹600",
+      "image": "/images/menhoodie.webp"
+    },
+    {
+      "name": "Jeans",
+      "description": "Men's blue jeans",
+      "price": "₹1000",
+      "image": "/images/menjeans.jpg"
+    },
+    {
+      "name": "T-Shirt",
+      "description": "Men's printed t-shirt",
+      "price": "₹500",
+      "image": "/images/messhirt.webp"
+    },
+    {
+      "name": "Women's hoodie",
+      "description": "Women's cream hoodie",
+      "price": "₹600",
+      "image": "/images/womenhoodie.avif"
+    },
+    {
+      "name": "T-Shirt",
+      "description": "Men's Limited edition t-shirt",
+      "price": "₹400",
+      
+      "image": "/images/menshirt2.webp"
+    },
+    {
+      "name": "Pullover",
+      "description": "Women's Must-have item",
+      "price": "₹750",
+      "image": "/images/sweater.png"
+    },
+    {
+      "name": "Lavender Pullover",
+      "description": "Popular choice by many women",
+      "price": "₹900",
+      "image": "/images/sweater2.png"
+    },
+    {
+      "name": "Women's hoodie",
+      "description": "Women's cute printed hoodie-Best seller",
+      "price": "₹650",
+      "image": "/images/womenhoodie2.jpg"
+    },
+    {
+      "name": "Hoodie",
+      "description": "Men's lavendar hoodie-Customer favorite",
+      "price": "₹700",
+      "image": "/images/menhoodie2.webp"
+    },
+    
+
+
+
+
+    
+
+
+
+    {
+      "name": "Boys 3-piece Set",
+      "description": "Boys Blazer complete set!",
+      "price": "₹1600",
+      "image": "/images/boysblazerset.jpg"
+    },
+    {
+      "name": "Boys Shirt and t-shirt set",
+      "description": "Amazing shirt",
+      "price": "₹500",
+      "image": "/images/boyssetshirt.jpg"
+    },
+    {
+      "name": "Boys Shirt",
+      "description": "Kidswear",
+      "price": "₹500",
+      "image": "/images/boysshirt.jpg"
+    },
+    {
+      "name": "Boys Shirt",
+      "description": "Kidswear",
+      "price": "₹500",
+      "image": "/images/kidsboysshirt.jpg"
+    },
+    {
+      "name": "Girl's co-ord set",
+      "description": "Cute co-ord set",
+      "price": "₹700",
+      "image": "/images/kidscoord.jpg"
+    },
+    {
+      "name": "Kids Frock",
+      "description": "Georgeous Little frock!!",
+      "price": "₹500",
+      
+      "image": "/images/kidsfrock.jpg"
+    },
+    {
+      "name": "Girls Palzzo Set",
+      "description": "Girl's Must-have item",
+      "price": "₹750",
+      "image": "/images/kidsplazzoset.jpg"
+    },
+    {
+      "name": "Kids Skirt and Top",
+      "description": "Beautiful set",
+      "price": "₹900",
+      "image": "/images/kidsfrock2.jpg"
+    }
+  ]
+  

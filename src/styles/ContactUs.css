@@ -1,0 +1,470 @@
+/* 
+.contact-us-container {
+  display: flex;
+  height: 100vh; 
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+
+.header-image-container {
+  flex: 1;
+  background-color: #FFE3E3;
+  background-image: url('../assets/contact-us2-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.header-image-container h2 {
+  font-size: 2.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+.services-container {
+  flex: 1;
+  background-color: #FADFA1;
+  opacity: 0.9;
+  padding: 20px;
+  overflow-y: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service {
+  background-color: #6A9C89; 
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  cursor: pointer;
+  color: #F6EACB;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.service:hover {
+  background-color: #CD5C08;
+  color: #FFF5E4;
+}
+
+.service-icon {
+  font-size: 1.5em;
+  color: #ff6b6b;
+}
+
+.service h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.service p {
+  font-size: 0.9em;
+}
+
+
+.map-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.map-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.map-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.map-content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.map-content button:hover {
+  background-color: #ff4a4a;
+}
+
+
+@media (max-width: 768px) {
+  .contact-us-container {
+      flex-direction: column;
+  }
+
+  .header-image-container,
+  .services-container {
+      flex: none;
+      width: 100%;
+      height: 50vh; 
+  }
+
+  .services-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service {
+      width: 80%;
+  }
+}
+body{
+  overflow: auto;
+} */
+
+
+ 
+.contact-us-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.header-image-container {
+  flex: 1; /* Take half of the width */
+  background: #f5f5f5; /* Background color or image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/contact-usimg.png') ;
+}
+
+.header-image-container img {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: auto;
+}
+.service:hover {
+  /* background-color: #CD5C08; */
+  background-color: #A76D6A;
+  color: #E6E1E3;
+}
+
+.services-container {
+  flex: 1; /* Take half of the width */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 0.5fr); /* Two columns */
+  gap: 20px; /* Space between service items */
+  align-items: start; /* Align items at the start */
+  padding: 20px; /* Add padding around the container */
+}
+
+
+
+.service {
+  background-color: #B56576;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #F9F6F2;
+  transition: background-color 0.3s, color 0.3s;
+  min-width:300px; /* Set minimum width */
+  max-width: 300px; /* Set maximum width */
+  font-family: cursive;
+  height: 158px;
+  width: 300px; /* Set fixed width */
+  gap: 1px;
+  box-sizing: border-box; /* Include padding and border in width and height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.service:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 24px; /* Adjust icon size */
+  color: #EDE8DC;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* .popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center align items */
+}
+
+input[type="text"] {
+  width: 100%; /* Full width within popup */
+  height: 40px; /* Set height */
+  margin-bottom: 10px; /* Space below the input */
+  padding: 10px; /* Padding for the input */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  width: 100%; /* Full width for buttons */
+  border-radius: 10px !important;
+  
+}
+
+.store{
+  color: #B56576;
+  text-align: center;
+  justify-content: center;
+}
+.psub,.pcl
+{
+  border-radius: 10px;
+  background-color: #FFABAB;
+}
+.psub:hover{
+  background-color: #D9B77D;
+}
+.pcl:hover{
+  background-color: #D9B77D;
+}
+.error-message,
+.success-message {
+  width: 100%; /* Full width for messages */
+  text-align: center; /* Center text */
+  margin-top: 10px; /* Space above messages */
+}
+
+.feedback-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.feedback-popup-content {
+  text-align: center;
+}
+
+.feedback-popup h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.feedback-popup p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.feedback-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.feedback-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.feedback-list {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.feedback-item {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.feedback-item:hover {
+  background-color: #f1f1f1;
+}
+
+.feedback-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.feedback-submit {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-submit:hover {
+  background-color: #218838;
+}
+
+.pcl {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pcl:hover {
+  background-color: #c82333;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+
+textarea {
+  width: 100%;
+  height: 50px; /* Adjust as needed */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disable resizing */
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px; /* Margin on top of buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.map-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.map-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* body{
+  overflow: auto;
+} */
+body{
+  background-image: url('../assets/contactusbg.png');
+}
